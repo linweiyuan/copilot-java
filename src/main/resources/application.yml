@@ -1,0 +1,18 @@
+spring:
+  main:
+    banner-mode: off
+logging:
+  level:
+    root: error
+copilot:
+  token: ${COPILOT_TOKEN:}
+  chat-url: ${COPILOT_CHAT_URL:https://api.githubcopilot.com/chat/completions}
+  token-url: ${COPILOT_TOKEN_URL:https://api.github.com/copilot_internal/v2/token}
+  token-refresh-interval: ${COPILOT_TOKEN_REFRESH_INTERVAL:25} # in minutes
+  user-agent: ${COPILOT_USER_AGENT:GithubCopilot/1.5.52-243}
+  editor-version: ${COPILOT_EDITOR_VERSION:JetBrains-UI/251.27812.49}
+#proxy:
+#  host: ${PROXY_HOST:}
+#  port: ${PROXY_PORT:}
+#  username: ${PROXY_USERNAME:}
+#  password: ${PROXY_PASSWORD:}
